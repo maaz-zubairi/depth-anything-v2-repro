@@ -1,0 +1,14 @@
+# Loose ranges so this installs on Colab/Kaggle/local.
+# Once everything works on YOUR machine, run:  bash scripts/freeze.sh
+# and commit requirements.lock.txt  (assignment asks you to pin versions early).
+torch>=2.1
+torchvision>=0.16
+transformers>=4.45,<6
+huggingface_hub>=0.24
+numpy>=1.24
+pillow>=10.0
+pandas>=2.0
+matplotlib>=3.7
+tqdm>=4.65
+streamlit>=1.35
+pytest>=7.0

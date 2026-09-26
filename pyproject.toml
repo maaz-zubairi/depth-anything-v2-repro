@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dav2-repro"
+version = "0.1.0"
+description = "Reproduction + deployment of Depth Anything V2 (NeurIPS 2024)"
+requires-python = ">=3.10"
+dependencies = []  # see requirements.txt
+
+[tool.setuptools.packages.find]
+where = ["src"]

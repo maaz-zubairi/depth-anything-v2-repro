@@ -1,0 +1,13 @@
+model,dataset,metric,paper_value,paper_source
+v2-small,nyu,absrel,,
+v2-small,nyu,delta1,,
+v2-base,nyu,absrel,,
+v2-base,nyu,delta1,,
+v2-large,nyu,absrel,,
+v2-large,nyu,delta1,,
+v2-small,da2k,acc_overall,,
+v2-base,da2k,acc_overall,,
+v2-large,da2k,acc_overall,,
+v1-small,da2k,acc_overall,,
+v1-base,da2k,acc_overall,,
+v1-large,da2k,acc_overall,,
