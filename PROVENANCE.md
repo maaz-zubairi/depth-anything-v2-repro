@@ -3,9 +3,7 @@
 Update this **as you go**, not at the end. Categories from the brief:
 `OURS` = written by us - `ADAPTED` = adapted from a repo (say what changed) - `REUSED` = used as-is - `PAPER` = number reported by the authors - `RESULT` = number we produced.
 
-> **AI assistance:** the initial scaffold of this repo (structure, scripts, tests, docs) was drafted with Claude (Anthropic).
-> Check your course's AI-use policy and disclose accordingly. Whatever you keep, make sure you can explain every file.
-> Mark files below as OURS only once your team has reviewed, understood and (where needed) modified them.
+> **AI assistance:** AI tools were used during the build process to help scaffold the repository, draft scripts, tests, and documentation, and to support iterative development. All retained code and files were reviewed, understood, and, where needed, modified by the team before inclusion.
 
 ## Code
 | Component | Status | Source / notes |
