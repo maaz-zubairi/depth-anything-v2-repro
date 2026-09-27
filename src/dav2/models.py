@@ -66,7 +66,7 @@ class DepthModel:
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
         out = self.model(**inputs).predicted_depth  # (1, h, w)
         out = F.interpolate(
-            out.unsqueeze(1), size=image.size[::-1], mode="bicubic", align_corners=False
+            out.unsqueeze(1), size=image.size[::-1], mode="bilinear", align_corners=False
         )
         return out[0, 0].float().cpu().numpy()
 
