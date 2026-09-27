@@ -1,0 +1,10 @@
+model,metric,ours,dataset,n_images
+v2-base,absrel,0.044899219373941625,nyu_n10,10
+v2-large,absrel,0.044681429994649906,nyu_n10,10
+v2-small,absrel,0.05207104352201429,nyu_n10,10
+v2-base,rmse,0.19334616050702522,nyu_n10,10
+v2-large,rmse,0.19107277611535148,nyu_n10,10
+v2-small,rmse,0.20715831134186818,nyu_n10,10
+v2-base,delta1,0.9770137491616365,nyu_n10,10
+v2-large,delta1,0.9768117035546613,nyu_n10,10
+v2-small,delta1,0.9643607478202549,nyu_n10,10
