@@ -10,7 +10,7 @@ Update this **as you go**, not at the end. Categories from the brief:
 |---|---|---|
 | Model weights (V1 & V2, S/B/L) | REUSED | Hugging Face `depth-anything/Depth-Anything-V2-*-hf`, `LiheYoung/depth-anything-*-hf`; unchanged |
 | Architecture (DINOv2 + DPT) | REUSED | `transformers` `DepthAnythingForDepthEstimation`; reference: github.com/DepthAnything/Depth-Anything-V2 @ <commit> |
-| `src/dav2/models.py` | OURS (AI-assisted) | thin wrapper; interpolation to input size follows the HF model-card example |
+| `src/dav2/models.py` | OURS (AI-assisted) | Thin Hugging Face wrapper. Output upsampling changed from bicubic to bilinear to eliminate observed negative-disparity overshoot; fix committed as [`d9b8c0e`](https://github.com/maaz-zubairi/depth-anything-v2-repro/commit/d9b8c0e). Our `align_corners=False` still differs from the [official implementation](https://github.com/DepthAnything/Depth-Anything-V2/blob/main/depth_anything_v2/dpt.py). |
 | `src/dav2/metrics.py` | OURS (AI-assisted) | alignment protocol follows MiDaS / official eval - confirm vs official code @ <commit> |
 | `src/dav2/data.py` | OURS (AI-assisted) | |
 | `scripts/*.py`, `tests/` | OURS (AI-assisted) | |

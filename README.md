@@ -20,7 +20,7 @@ streamlit run app/streamlit_app.py                       # the deployment
 | Step | Command | Output |
 |---|---|---|
 | Smoke test | `python scripts/01_smoke_test.py` | console check |
-| Dense-depth eval (NYU, KITTI optional) | `python scripts/02_eval_depth.py --dataset nyu --data-root data/nyu [--limit 10]` | `results/nyu_*.csv` |
+| Dense-depth eval (NYU, KITTI optional) | `python scripts/02_eval_depth.py --dataset nyu --data-root data/nyu --eigen-crop [--limit 10]` | `results/nyu_*.csv` |
 | DA-2K pair accuracy, V1 and V2 | `python scripts/03_eval_da2k.py --data-root data/da2k [--limit 20]` | `results/da2k_pairs.csv` |
 | Latency / params / memory | `python scripts/04_benchmark_latency.py` | `results/latency.csv` |
 | Experiment analysis | `python scripts/05_analyze_da2k.py` | `results/da2k_*.csv`, `figures/da2k_gain_by_scene.png` |
